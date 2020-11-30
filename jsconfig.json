@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@game/*": ["./src/game/*"],
+      "@config/*": ["./src/config/*"],
+      "@error/*": ["./src/error/*"],
+      "@event/*": ["./src/event/*"],
+    }
+  }
+}
