@@ -30,3 +30,12 @@ export function submitEvent() {
     }
   }
 }
+
+export function restartGametEvent() {
+  document.getElementById('game-restart-button').style.display = 'none';
+  document.getElementById('user-input').value = '';
+  document.getElementById('submit').disabled = false;
+  document.getElementById('result').innerHTML = '';
+
+  new Computer().init();
+}
