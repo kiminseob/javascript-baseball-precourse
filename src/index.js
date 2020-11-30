@@ -1,13 +1,18 @@
-export default function BaseballGame() {
-  this.play = function (computerInputNumbers, userInputNumbers) {
-    return "결과 값 String";
-  };
-}
+import {submitEvent, restartGametEvent} from '@event/app.js';
 
-// export default class BaseballGame {
-//   play(computerInputNumbers, userInputNumbers) {
-//     return "결과 값 String";
-//   }
-// }
+document.getElementById('app').addEventListener('click', (event) => {
+  const targetId = event.target.id;
 
-new BaseballGame();
+  if (targetId === 'submit') {
+    submitEvent();
+  } else if (targetId === 'game-restart-button') {
+    restartGametEvent();
+  }
+});
+
+document.getElementById('user-input').addEventListener('keyup', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    document.getElementById('submit').click();
+  }
+});
