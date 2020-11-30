@@ -1,0 +1,33 @@
+{
+  "name": "javascript-baseball-precourse",
+  "version": "1.0.0",
+  "description": "숫자 야구 게임",
+  "main": "",
+  "scripts": {
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiminseob/javascript-baseball-precourse.git"
+  },
+  "author": "kiminseob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiminseob/javascript-baseball-precourse/issues"
+  },
+  "homepage": "https://github.com/kiminseob/javascript-baseball-precourse#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-private-methods": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.14.0",
+    "eslint-config-google": "^0.14.0",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
